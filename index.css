@@ -29,11 +29,11 @@
 p{
     font-weight: 400;
 }
-.salutations .col-lg-4{
+.salutations .col-md-4{
     width: 220px;
     padding-right: 0;
 }
-.salutations .col-lg-8{
+.salutations .col-md-8{
     padding-left: 17px;
 }
 .emoji{
@@ -103,7 +103,4 @@ textarea.form-control{
     #logo-div{
         margin: auto;
     }
-    /* #additional{
-        width: 100%;
-    } */
 }
