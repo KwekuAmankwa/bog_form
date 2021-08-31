@@ -1,0 +1,109 @@
+.content{
+    margin: 20px;
+    border: 1px solid #80808029;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.name{
+    padding-right: 7px;
+}
+.name h4{
+    font-weight: 700;
+}
+#logo{
+    width: 200px;
+    height: 200px;
+}
+#logo img{
+    width: 200px;
+    height: 200px;
+    padding: 7px;
+}
+#greetings{
+    margin-top: 20px;
+    padding-top: 20px;
+}
+#greetings p{
+    font-size: larger;
+    font-weight: 700;
+}
+p{
+    font-weight: 400;
+}
+.salutations .col-lg-4{
+    width: 220px;
+    padding-right: 0;
+}
+.salutations .col-lg-8{
+    padding-left: 17px;
+}
+.emoji{
+    display: inline;
+}
+.em_lab{
+    margin: 10px;
+    text-align: center;
+    float: left;
+}
+.date{
+    margin-top: 10px;
+    padding-left: 5px;
+    padding-right: 5px; 
+}
+#lables{
+    width: 100px;
+}
+#mmddyy{
+    /* float: right; */
+    width: 120px;
+}
+#date{
+    width: 155px;
+    height: 29px;
+}
+.admission{
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 0.4rem;
+}
+button{
+    width: 50px;
+    height: 34px;
+}
+.Emergency{
+    background-color: #fde186;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.Nursing{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+textarea.form-control{
+    height: 36px;
+}
+.doctor{
+    background-color: #fde186;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.specialised{
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.emoji {
+    color: #333;
+    background-color: blue;
+    /* border-color: #8c8c8c; */
+}
+
+@media screen and (max-width: 756px){
+    .name{
+        text-align: center;
+    }
+    #logo-div{
+        margin: auto;
+    }
+    /* #additional{
+        width: 100%;
+    } */
+}

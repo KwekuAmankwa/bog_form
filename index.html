@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emergency Department Patient Care Evaluation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="try.css">
+    </head>
+
+    <body>
+        <div class="container" >
+            <div class="content">
+                <div class="row" >
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" >
+                        <div class="name" style="text-align: center;">
+                            <h3>EMERGENCY DEPARTMENT</h3>
+                            <h4>PATIENT CARE EVALUATION</h4>
+                        </div>
+                        <div class="salutations">
+                            <div class="row">
+                                <div class="col-md-4" id="logo-div">
+                                    <div id="logo">
+                                        <img src="Bank_hospital.png">
+                                    </div>
+                                </div>
+                                <div class="col-md-8">
+                                    <div id="greetings">
+                                        <p>Dear Patient,</p><br>
+                                        <p>
+                                            In order to continuously improve our facilities
+                                            and service, it is important to know and understand
+                                            your perception of our hospital.
+                                            Your valuable input will be used to improve 
+                                            our services to you.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="rating" style="background-color: #d0d0de;">                            
+                            <p style="padding: 5px;">Please complete this questionnaire using the rating scale below.</p>
+                            <div class="rates">
+                                <div class="row">
+                                    <div class="col-md-3">
+                                        <p style="padding: 5px;">Rating Guide:</p>
+                                    </div>
+                                    <div class="col-md-9">
+                                        <div class="emoji">                                                        
+                                            <div class="em_lab">
+                                                <p id="excellent" style="font-size: 35px;">&#128512</p>
+                                                <label for="excellent">Excellent</label>
+                                            </div>
+                                                                                                    
+                                            <div class="em_lab">
+                                                <p id="good"style="font-size: 35px;">&#128522</p>
+                                                <label for="good">Good</label>
+                                            </div> 
+
+                                            <div class="em_lab">
+                                                <p id="fair" style="font-size: 35px;">&#128528</p>
+                                                <label for="fair">Fair</label>
+                                            </div> 
+                                            
+                                            <div class="em_lab">
+                                                <p id="poor" style="font-size: 35px;">&#128577</p>
+                                                <label for="poor">Poor</label>
+                                            </div>
+
+                                            <div class="em_lab">
+                                                <p id="unacceptable" style="font-size: 35px;">&#128544</p>
+                                                <label for="unacceptable">Unacceptable</label>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> 
+                        </div>
+
+                        <div class="date" style=" text-align: right; "> 
+                            <div class="sumn">    
+                                <label for="date">Date of Completion:</label> 
+                                <input type="date" id="date">                                                 
+                                <!-- <div id="lables" style="text-align: left;"></div>
+                                <div id="mmddyy"></div> -->
+                            </div>
+                        </div>
+                        <br>
+                        
+                        <div class="admission" style="margin-bottom: 10px;">
+                            <h3>1. Admission/Reception</h3>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="minutes">
+                                        <p>Waiting time at reception or for
+                                        admission process to commence?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;" >
+                                    <div id="minutes" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="test1" name="radio-group">
+                                                <label for="test1"><5</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="test2" name="radio-group">
+                                                <label for="test2"><10</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="test3" name="radio-group">
+                                                <label for="test3"><20</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="test4" name="radio-group">
+                                                <label for="test4"><30</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="test5" name="radio-group">
+                                                <label for="test5">>30</label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="warmth">
+                                        <p>Warmth/understanding of reception staff?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="warmth" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="warmth1" name="warmth-group">
+                                                <label for="warmth1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="warmth2" name="warmth-group">
+                                                <label for="warmth2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="warmth3" name="warmth-group">
+                                                <label for="warmth3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="warmth4" name="warmth-group">
+                                                <label for="warmth4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="warmth5" name="warmth-group">
+                                                <label for="warmth5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="staff">
+                                        <p>Did the admission staff explain casualty fees?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="staff" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="staff1" name="staff-group">
+                                                <label for="staff1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="staff2" name="staff-group">
+                                                <label for="staff2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="staff3" name="staff-group">
+                                                <label for="staff3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="staff4" name="staff-group">
+                                                <label for="staff4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="staff5" name="staff-group">
+                                                <label for="staff5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="directions">
+                                        <p>Information regarding what to do and where to go?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="directions" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="directions1" name="directions-group">
+                                                <label for="directions1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="directions2" name="directions-group">
+                                                <label for="directions2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="directions3" name="directions-group">
+                                                <label for="directions3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="directions4" name="directions-group">
+                                                <label for="directions4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="directions5" name="directions-group">
+                                                <label for="directions5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="efficiency">
+                                        <p>Efficiency?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="efficiency" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="efficiency1" name="efficiency-group">
+                                                <label for="efficiency1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="efficiency2" name="efficiency-group">
+                                                <label for="efficiency2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="efficiency3" name="efficiency-group">
+                                                <label for="efficiency3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="efficiency4" name="efficiency-group">
+                                                <label for="efficiency4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="efficiency5" name="efficiency-group">
+                                                <label for="efficiency5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                           
+                        </div>
+                        <br>
+                        <div class="Emergency" style="margin-top: 10px; margin-bottom: 10px;">
+                            <div class="row">
+                                <div class="col-md-6" style="text-align: left;">
+                                    
+                                        <h3>2. Emergency Department facilities and non nursing staff</h3>
+                                    
+                                </div>
+                                <div class="col-md-6" style="text-align: center;">
+                                    <div id="facilities" style="margin-top: 20px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="facilities1" name="facilities-group">
+                                                <label for="facilities1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="facilities2" name="facilities-group">
+                                                <label for="facilities2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="facilities3" name="facilities-group">
+                                                <label for="facilities3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="facilities4" name="facilities-group">
+                                                <label for="facilities4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="facilities5" name="facilities-group">
+                                                <label for="facilities5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="Nursing">
+                            <h3>3. Nursing Care</h3>
+                            <div class="row">                                
+                                <div class="col-md-5">
+                                    <label for="competence">
+                                        <p>Competence and professionalism of staff?</p>
+                                    </label>                                                                      
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="competence" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="competence1" name="competence-group">
+                                                <label for="competence1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="competence2" name="competence-group">
+                                                <label for="competence2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="competence3" name="competence-group">
+                                                <label for="competence3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="competence4" name="competence-group">
+                                                <label for="competence4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="competence5" name="competence-group">
+                                                <label for="competence5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="understand">
+                                        <p>Nurses explained treatment and procedures in a way you could understand?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="understand" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="understand1" name="understand-group">
+                                                <label for="understand1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="understand2" name="understand-group">
+                                                <label for="understand2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="understand3" name="understand-group">
+                                                <label for="understand3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="understand4" name="understand-group">
+                                                <label for="understand4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="understand5" name="understand-group">
+                                                <label for="understand5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="respect">
+                                        <p>Treated with courtesy and respect?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="respect" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="respect1" name="respect-group">
+                                                <label for="respect1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="respect2" name="respect-group">
+                                                <label for="respect2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="respect3" name="respect-group">
+                                                <label for="respect3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="respect4" name="respect-group">
+                                                <label for="respect4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="respect5" name="respect-group">
+                                                <label for="respect5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="listen">
+                                        <p>Listened carefully to you?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="listen" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="listen1" name="listen-group">
+                                                <label for="listen1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listen2" name="listen-group">
+                                                <label for="listen2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listen3" name="listen-group">
+                                                <label for="listen3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listen4" name="listen-group">
+                                                <label for="listen4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listen5" name="listen-group">
+                                                <label for="listen5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="privacy">
+                                        <p>Did staff show respect for privacy and dignity?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="privacy" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="privacy1" name="privacy-group">
+                                                <label for="privacy1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="privacy2" name="privacy-group">
+                                                <label for="privacy2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="privacy3" name="privacy-group">
+                                                <label for="privacy3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="privacy4" name="privacy-group">
+                                                <label for="privacy4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="privacy5" name="privacy-group">
+                                                <label for="privacy5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="comments" style="padding-top: 7px;" ><p>Any additional comments?</p></label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="additional">
+                                        <textarea id="comment" placeholder="Enter Comments" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="doctor">
+                            <h3>4. Doctor Care</h3>                            
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="courtesy">
+                                        <p>The doctor treated you with courtesy and respect?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="courtesy" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="courtesy1" name="courtesy-group">
+                                                <label for="courtesy1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="courtesy2" name="courtesy-group">
+                                                <label for="courtesy2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="courtesy3" name="courtesy-group">
+                                                <label for="courtesy3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="courtesy4" name="courtesy-group">
+                                                <label for="courtesy4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="courtesy5" name="courtesy-group">
+                                                <label for="courtesy5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="listened">
+                                        <p>The doctor listened carefully to you?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="listened" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="listened1" name="listened-group">
+                                                <label for="listened1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listened2" name="listened-group">
+                                                <label for="listened2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listened3" name="listened-group">
+                                                <label for="listened3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listened4" name="listened-group">
+                                                <label for="listened4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="listened5" name="listened-group">
+                                                <label for="listened5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="explain">
+                                        <p>The doctor explained things in a way you could understand?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="explain" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="explain1" name="explain-group">
+                                                <label for="explain1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="explain2" name="explain-group">
+                                                <label for="explain2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="explain3" name="explain-group">
+                                                <label for="explain3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="explain4" name="explain-group">
+                                                <label for="explain4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="explain5" name="explain-group">
+                                                <label for="explain5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-bottom: 7px;">
+                                <div class="col-md-5">
+                                    <label for="additional" style="padding-top: 7px;" ><p>Any additional comments?</p></label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="additional">
+                                        <textarea id="comment" placeholder="Enter Comments" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="specialised">
+                            <h3>5. Care in Specialised Units (complete only if applicable)</h3>                            
+                            <div class="row">
+                                <div class="col-md-7">
+                                    <label for="courtesy">
+                                        <p>Overall how would you rate the care during:</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-5" style="text-align: right;">
+                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="radiology">
+                                        <p>Radiology</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="radiology" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="radiology1" name="radiology-group">
+                                                <label for="radiology1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="radiology2" name="radiology-group">
+                                                <label for="radiology2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="radiology3" name="radiology-group">
+                                                <label for="radiology3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="radiology4" name="radiology-group">
+                                                <label for="radiology4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="radiology5" name="radiology-group">
+                                                <label for="radiology5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="blood">
+                                        <p>Blood sampling</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="blood" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="blood1" name="blood-group">
+                                                <label for="blood1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="blood2" name="blood-group">
+                                                <label for="blood2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="blood3" name="blood-group">
+                                                <label for="blood3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="blood4" name="blood-group">
+                                                <label for="blood4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="blood5" name="blood-group">
+                                                <label for="blood5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="theatre">
+                                        <p>Theatre</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="theatre" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="theatre1" name="theatre-group">
+                                                <label for="theatre1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="theatre2" name="theatre-group">
+                                                <label for="theatre2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="theatre3" name="theatre-group">
+                                                <label for="theatre3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="theatre4" name="theatre-group">
+                                                <label for="theatre4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="theatre5" name="theatre-group">
+                                                <label for="theatre5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="comments"><p>Comments?</p></label>
+                                </div>
+                                <div class="col-md-7" style="text-align: right; padding-top: 7px;">
+                                    <div id="additional" style="padding-bottom: 10px;">
+                                        <textarea id="comments" placeholder="Enter Comments" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="index.js"></script>
+    </body>
+</html>
