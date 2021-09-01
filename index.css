@@ -65,10 +65,6 @@ p{
     padding-right: 5px;
     margin: 0.4rem;
 }
-button{
-    width: 50px;
-    height: 34px;
-}
 .Emergency{
     background-color: #fde186;
     padding-left: 5px;
@@ -94,6 +90,20 @@ textarea.form-control{
     color: #333;
     background-color: blue;
     /* border-color: #8c8c8c; */
+}
+.complete{
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+#submit{
+    background-color: #f0f1eb;
+    border: 1px solid #a8e6fb;
+    border-radius: 5px;
+    width: 70px;
+    height: 34px;
+    font-size: larger;
+    color: #1478de;
 }
 
 @media screen and (max-width: 756px){

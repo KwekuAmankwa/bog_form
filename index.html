@@ -85,12 +85,9 @@
                             <div class="sumn">    
                                 <label for="date">Date of Completion:</label> 
                                 <input type="date" id="date">                                                 
-                                <!-- <div id="lables" style="text-align: left;"></div>
-                                <div id="mmddyy"></div> -->
                             </div>
                         </div>
-                        <br>
-                        
+                        <br>                       
                         <div class="admission" style="margin-bottom: 10px;">
                             <h3>1. Admission/Reception</h3>
                             <div class="row">
@@ -714,14 +711,25 @@
                                 </div>
                             </div>
                         </div>
+                        <br>
+                        <div class="complete">
+                            <button onclick="complete()" id="submit" >Submit</button>
+                        </div>
                     </div>
                     <div class="col-md-2"></div>
                 </div>
             </div>
         </div>
 
+        <script>
+            function complete(){
+                var c = confirm("Press OK to submit survey!");
+                if (c == true) {
+                    location.replace("submit.html");
+                }
+            }
+        </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-        <script src="index.js"></script>
     </body>
 </html>
