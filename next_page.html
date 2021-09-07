@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emergency Department Patient Care Evaluation</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <link rel="stylesheet" href="next_page.css">
+        <link rel="stylesheet" href="next.css">
+        <link rel="stylesheet" href="try.css">
+    </head>
+
+    <body>
+        <div class="container" >
+            <div class="content">
+                <div class="row" >
+                    <div class="col-md-2"></div>
+                    <div class="col-md-8" >
+                        <div class="name" style="text-align: center;">
+                            <h3>EMERGENCY DEPARTMENT</h3>
+                            <h4>PATIENT CARE EVALUATION</h4>
+                        </div>
+                        
+                        <div class="discharge" style="margin-bottom: 10px;">
+                            <h3>6. Discharge</h3>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="enquire">
+                                        <p>Did staff enquire whether help would be needed 
+                                            after discharge?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;" >
+                                    <div id="enquire" style="margin-bottom: 15px;">
+                                        <ul class="next">
+                                            <li>
+                                                <input type="radio" id="enquire1" name="enquire-group">
+                                                <label for="enquire1">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="enquire2" name="enquire-group">
+                                                <label for="enquire2">No</label>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="symptoms">
+                                        <p>Did staff provide information in writing about symptoms
+                                            to look out for and care after discharge?
+                                        </p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="symptoms" style="margin-bottom: 15px;">
+                                        <ul class="next">
+                                            <li>
+                                                <input type="radio" id="symptoms1" name="symptoms-group">
+                                                <label for="symptoms1" class="">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="symptoms2" name="symptoms-group">
+                                                <label for="symptoms2" class="">No</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>                                                        
+                        </div>
+                        <br>
+                        <div class="Family">
+                            <h3>7. Family and Access to Emergency</h3>
+                            <div class="row">                                
+                                <div class="col-md-5">
+                                    <label for="support">
+                                        <p>How would you rate the support provided by staff
+                                            to your family and friends?
+                                        </p>
+                                    </label>                                                                      
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="support" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="support1" name="support-group">
+                                                <label for="support1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="support2" name="support-group">
+                                                <label for="support2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="support3" name="support-group">
+                                                <label for="support3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="support4" name="support-group">
+                                                <label for="support4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="support5" name="support-group">
+                                                <label for="support5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>                                    
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="access">
+                                        <p>How easy was it to access the casualty unit?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="access" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="access1" name="access-group">
+                                                <label for="access1" class="">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="access2" name="access-group">
+                                                <label for="access2" class="">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="access3" name="access-group">
+                                                <label for="access3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="access4" name="access-group">
+                                                <label for="access4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="access5" name="access-group">
+                                                <label for="access5" class="">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="staff">
+                            <h3>8. Staff</h3>
+                            <p>Did any member of staff go out of their way to make you
+                                feel special during your visit?
+                            </p>                            
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="first">
+                                       <p>Name:</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="text-box" style="margin-bottom: 15px;">
+                                        <input type="text" class="form-control" id="first" name="first" placeholder="Enter Name...">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="surname">
+                                        <p>Surname:</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="text-box" style="margin-bottom: 15px;">
+                                        <input type="text" class="form-control" id="surname" name="surname" placeholder="Enter Surname...">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="overall">
+                            <h3>9. Overall Rating</h3>                            
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="visit">
+                                        <p>Overall how would you rate your visit to the hospital?</p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="visit" style="margin-bottom: 15px;">
+                                        <ul class="main">
+                                            <li>
+                                                <input type="radio" id="visit1" name="visit-group">
+                                                <label for="visit1">&#128512</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="visit2" name="visit-group">
+                                                <label for="visit2">&#128522</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="visit3" name="visit-group">
+                                                <label for="visit3">&#128528</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="visit4" name="visit-group">
+                                                <label for="visit4">&#128577</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="visit5" name="visit-group">
+                                                <label for="visit5">&#128544</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="recommend">
+                                        <p>Based on your overall experience, would you recommend
+                                            this hospital to someone else?
+                                        </p>
+                                    </label>
+                                </div>
+                                <div class="col-md-7" style="text-align: center;">
+                                    <div id="recommend" style="margin-bottom: 15px;">
+                                        <ul class="next">
+                                            <li>
+                                                <input type="radio" id="recommend1" name="recommend-group">
+                                                <label for="recommend1" class="">Yes</label>
+                                            </li>
+                                            <li>
+                                                <input type="radio" id="recommend2" name="recommend-group">
+                                                <label for="recommend2" class="">No</label>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="general">
+                            <h3>10. General Information</h3>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="reside"><p>Where do you live? i.e. Residential suburb</p></label>
+                                </div>
+                                <div class="col-md-7" style="text-align: right;">
+                                    <div id="additional" style="padding-bottom: 10px;">
+                                        <textarea id="reside" placeholder="Enter Comments" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="hear"><p>How did you hear about The Bank Hospital?</p></label>
+                                </div>
+                                <div class="col-md-7" style="text-align: right;">
+                                    <div id="additional" style="padding-bottom: 10px;">
+                                        <textarea id="hear" placeholder="Enter Comments" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <label for="consult"><p>Which doctor did you consult with?</p></label>
+                                </div>
+                                <div class="col-md-7" style="text-align: right;">
+                                    <div id="additional" style="padding-bottom: 10px;">
+                                        <textarea id="consult" placeholder="Enter Comments" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="complete">
+                            <button onclick="complete()" id="submit" >Submit</button>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+        </div>
+
+        <script>
+            function complete(){
+                var c = confirm("Press OK to submit survey!");
+                if (c == true) {
+                    location.replace("submit.html");
+                }
+            }
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </body>
+</html>

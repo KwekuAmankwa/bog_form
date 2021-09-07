@@ -260,7 +260,7 @@
                             </div>                                                           
                         </div>
                         <br>
-                        <div class="Emergency" style="margin-top: 10px; margin-bottom: 10px;">
+                        <!-- <div class="Emergency" style="margin-top: 10px; margin-bottom: 10px;">
                             <div class="row">
                                 <div class="col-md-6" style="text-align: left;">
                                     
@@ -294,8 +294,8 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <br>
+                        </div> -->
+                        <!-- <br> -->
                         <div class="Nursing">
                             <h3>3. Nursing Care</h3>
                             <div class="row">                                
@@ -713,7 +713,7 @@
                         </div>
                         <br>
                         <div class="complete">
-                            <button onclick="complete()" id="submit" >Submit</button>
+                            <button onclick="complete()" id="submit" >Next&#8594</button>
                         </div>
                     </div>
                     <div class="col-md-2"></div>
@@ -723,10 +723,9 @@
 
         <script>
             function complete(){
-                var c = confirm("Press OK to submit survey!");
-                if (c == true) {
-                    location.replace("submit.html");
-                }
+
+                window.location.href="next_page.html";
+                
             }
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
